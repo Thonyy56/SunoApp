@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Suno</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <style>
+    body,h1,h2,h3,h4,h5 {
+      font-family: "Poppins", sans-serif;
+      color: #000000;
+    }
+    body {
+      font-size: 16px;
+      background-color: #E6D7FA;
+    }
+    .w3-sidebar {
+      background-color: #FFFFFF !important;
+    }
+    .w3-sidebar .w3-bar-item {
+      color: #000000 !important;
+    }
+    .w3-sidebar .w3-bar-item:hover {
+      background-color: #E6D7FA !important;
+      color: #FFFFFF !important;
+    }
+    .w3-text-red, .w3-xxxlarge, h1, h2, h3 {
+      color: #AA78FF !important;
+    }
+    .custom-button {
+      background-color: #AA78FF;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .custom-button:hover {
+      background-color: #8C5DEB;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Company<br>Name</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Inicio</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button">Sobre o App</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">Funções</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button">Repositório</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button">Download</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Créditos</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding" style="background-color: #FFFFFF;">
+  <a href="javascript:void(0)" class="w3-button w3-margin-right" style="background-color: #FFFFFF; color: #E6D7FA;" onclick="w3_open()">☰</a>
+  <span style="color: #AA78FF;">Company Name</span>
+</header>
+
+<!-- Overlay effect -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Page content -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Suno</b></h1>
+    <h1 class="w3-xxxlarge"><b>Sobre o App</b></h1>
+    <hr style="width:50px;border:5px solid #AA78FF" class="w3-round">
+    <p>O Suno é um aplicativo Open-Source escrito em Python pensado para auxiliar pessoas Analfabetas com questões do seu dia-a-dia por meio da Tecnologia. Feito com um Design simples e de Facil entendimento e uso para melhor experiencia do usuário, não precisando de muita prática com Tecnologia e Foi baseado em um antigo projeto de um dos criadores chamado "AlfABC".</p>
+  </div>
+
+  <!-- Funções -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge"><b>Funções</b></h1>
+    <hr style="width:50px;border:5px solid #AA78FF" class="w3-round">
+    <p>O Suno tem algumas funcionalidades disponiveis para que as mesmas auxiliem analfabetos com alguns dos seus problemas. O app conta com essas funções:<br> <br> ◉ Leitor de Textos - Permite que o usuário coloque um texto já copiado no teclado para que o app leia. <br> ◉ Leitor de Textos de Imagens - Permite que o Usuário tire uma foto de um texto que não esteja conseguindo ler para que o app leia para ele. <br> ◉ Interprete de Imagens - Permite que o Usuário tire uma foto e envie para o aplicativo e por meio de uma IA ele analiza a imagem e te explica de uma forma simples.</p>
+    <p>Esperamos trazer mais funcionalidades e integrações para o aplicativo no futuro!</p>
+  </div>
+
+  <!-- Repositório -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge"><b>Repositório</b></h1>
+    <hr style="width:50px;border:5px solid #AA78FF" class="w3-round">
+    <p>Como o Suno é um aplicativo Open-Source (Codigo-Aberto), por meio do nosso repositório no GitHub, você pode fazer modificações no código do aplicativo como melhorias, novas funcionalidades, etc...</p>
+    <p>Você pode acessar nosso Reposiório acessado o link: </p>
+    <p><b>https://github.com/Thonyy56/Suno</b></p>
+  </div>
+
+<!-- Download -->
+<div class="w3-container" id="packages" style="margin-top:75px">
+  <h1 class="w3-xxxlarge" style="color:#AA78FF;"><b>Download.</b></h1>
+  <hr style="width:50px;border:5px solid #AA78FF" class="w3-round">
+  <p>Você pode baixar nosso app agora mesmo!! Aperte o botão de Download abaixo.</p>
+</div>
+
+<div style="text-align:center;">
+  <a href="https://example.com/seu_arquivo.apk" class="w3-button w3-purple" target="_blank">Download</a>
+</div>
+
+<!-- Créditos -->
+<div class="w3-container" id="contact" style="margin-top:75px">
+  <h1 class="w3-xxxlarge" style="color:#AA78FF;"><b>Créditos.</b></h1>
+  <hr style="width:50px;border:5px solid #AA78FF" class="w3-round">
+</div>
+
+<div class="w3-row-padding w3-grayscale">
+  <div class="w3-col m4 w3-margin-bottom">
+    <div class="w3-light-grey">
+      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+      <div class="w3-container">
+        <h3>Anthony Davi Cavalcante de Sousa</h3>
+        <p class="w3-opacity">Lider do Projeto e Desenvolvedor</p>
+        <p>Espero que meu projeto possa ajudar muita gente!!</p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-col m4 w3-margin-bottom">
+    <div class="w3-light-grey">
+      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+      <div class="w3-container">
+        <h3>João Jacinto de Souza Neto</h3>
+        <p class="w3-opacity">Tester do App</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      </div>
+    </div>
+  </div>
+  <div class="w3-col m4 w3-margin-bottom">
+    <div class="w3-light-grey">
+      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+      <div class="w3-container">
+        <h3>Thiago Samuel Pinheiro Câmara</h3>
+        <p class="w3-opacity">Desingner e Tester do App</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<!-- Footer -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+  <p class="w3-right">Feito por: 
+    <a title="Grupo Suno" target="_blank" class="w3-hover-opacity">Grupo Suno</a>
+  </p>
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
